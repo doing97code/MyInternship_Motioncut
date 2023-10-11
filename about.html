@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:ital,wght@1,300;1,500&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <div class="leftside">
+                    su<span>vo</span> 
+            </div>
+            <div class="rightside">
+                <div class="right2">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/portfolio.html">Portfolio</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="mainabout">
+            <div class="row">
+                <div class="about-row-1">
+                    <img src="/image/danial-igdery-FCHlYvR5gJI-unsplash.jpg" alt="">
+                </div>
+                <div class="about-row-2">
+                    <span>About Me</span>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet cumque illum ad voluptatem
+                        corrupti nisi possimus quae odio necessitatibus, dolore est quam fuga nesciunt. Laborum,
+                        provident nemo incidunt porro esse quo magni quibusdam molestiae similique autem expedita
+                        impedit eveniet consequuntur repellendus iusto tenetur cum magnam blanditiis architecto rerum
+                        corporis! Sed corrupti numquam ipsa saepe quod! Ex consectetur nobis quidem inventore!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skill</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI?UX</span><br>Web Development</li>
+                            <li><span>Videography</span><br>Video Editing</li>
+                            <li><span>Web Design</span><br>Math Solving</li>
+                        </ul>
+                    </div>
+                          <!-- Experience -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023</span><br>Intership at Motioncut</li>
+                            <li><span>2023</span><br>E commerce Website</li>
+                            
+                        </ul>
+                    </div>
+                             <!-- Education -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>Board Exam</li>
+                            <li><span>2017</span><br>Highersecodary from Bongaon</li>
+                            <li><span>2018-2021 </span><br>Mathematics Honours</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

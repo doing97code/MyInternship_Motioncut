@@ -1,0 +1,317 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+    width: 100%;
+    background-color: #edf5e1;
+    box-shadow: 10px 5px 10px #d3dac9;
+    font-family: 'Poppins', sans-serif;
+}
+
+.leftside{
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Dancing Script', cursive;
+    font-size: 48px;
+    font-weight: 700;
+  }
+  .leftside {
+    color: black;
+  }
+  .leftside span{
+    color: #66f6f1;
+  }
+
+.rightside ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 15px;
+    
+}
+.rightside ul li a{
+    font-size: 17px;
+    text-decoration: none;
+    font-family: 'Dancing Script', cursive;
+font-family: 'Libre Franklin', sans-serif;
+font-family: 'Poppins', sans-serif;
+position: relative;
+padding: 0px 15px;
+color: black;
+}
+.rightside ul li a::after{
+    content: '';
+    width: 0;
+    height: 4px;
+    position: absolute;
+    background-color: #66f6f1;
+    left: 0;
+    bottom: -7px;
+    transition: 0.6s;
+    /* transform: translateY(10); */
+}
+
+.rightside ul li a:hover::after{
+    width: 100%;
+    
+}
+.rightside ul li a:hover{
+    background-color: #66f6f1;
+    transition: 0.5s;
+    border-radius: 12px;
+}
+.mainpart{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 15px 0;
+}
+
+.leftpart h3{
+    font-size: 20px;
+}
+.leftpart h1{
+    font-size: 90px;
+    color: #66f6f1;
+}
+.leftpart h4{
+    font-size: 20px;
+
+}
+.leftpart p{
+    font-size: 20px;
+    margin: 10px 0;
+    line-height: 30px;
+    /* ursor: pointer; */
+}
+.rightpart{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    
+}
+.rightpart img{
+    margin-top: 30px;
+    height: 500px;
+    display: block;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px #66f6f1 ;
+    transition: 0.5s;
+}
+.rightpart:hover img{
+transform: scale(1.1);
+}
+.leftpart button{
+    padding: 10px 25px;
+    background-color: #66f6f1;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: 10px 0;
+    font-size: 18px;
+}
+.leftpart button:hover{
+    background-color: #9fdc48;
+    transform: translateY(30);
+    transition: 0.5s;
+}
+.row{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    margin: 60px 0;
+}
+.about-row-1{
+    flex-basis: 25%;
+}
+.about-row-2{
+    flex-basis: 45%;
+    
+}
+.about-row-1 img{
+    height: 300px;
+    width: 500px;
+    box-shadow: 15px 10px 10px #66f6f1
+}
+.about-row-2 >span{
+    font-size: 50px;
+    width: auto;
+margin-left: 20%;    font-family: 'Dancing Script', cursive;
+/* font-family: 'Libre Franklin', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+}
+.about-row-2 p{
+    line-height: 25px;
+    font-size: 17px;
+    margin: 20px 0;
+}
+.tab-titles{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.tab-links{
+    position: relative;
+}
+.tab-titles.tab-links {
+    padding: 5px 10px;
+    margin: 40px 0;
+    cursor: pointer;
+    position: relative;
+}
+p.tab-links {
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.tab-links::after{
+    content: '';
+    width:0;
+    height: 4px;
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    background-color: #66f6f1;
+}
+.tab-links.active-link::after{
+    width: 80%;
+}
+.tab-contents li{
+    list-style: none;
+    font-size: 18px;
+    line-height: 35px;
+}
+.tab-contents li span{
+    color: #66f6f1;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+.portfolio{
+    margin: 50px 0;
+}
+.work-lists{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.work-lists img{
+    height: 300px;
+    width: 300px;
+    /* display: block; */
+    transition: 0.5s;
+}
+.work-lists:hover img{
+    transform: scale(1.1);
+}
+.sub-title{
+    font-size: 40px;
+    margin: 70px 0;
+    text-align: center;
+}
+.sub-title h1{
+    font-family: 'Dancing Script', cursive;
+font-family: 'Libre Franklin', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.layer{
+    width: 100%;
+    height:0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(rgba(0,0,0,0.6),#66f6f1);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+.layer p{
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Dancing Script', cursive;
+font-family: 'Libre Franklin', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+.layer h5{
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+.work-lists:hover .layer{
+    height: 100%;
+}
+.left-row h1{
+    font-size: 60px;
+    margin: 15px 0;
+}
+.left-row h1 span{
+    color: #66f6f1;
+    
+}
+.left-row a{
+    background-color: #66f6f1;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+.left-row p{
+    font-size: 20px;
+    margin: 25px 0px;
+}
+.right-row form{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 20px;
+}
+.right-row input{
+    width: 26rem;
+    margin: 15px;
+    font-size: 16px;
+    padding: 5px 0;
+}
+.right-row textarea{
+    width: 26rem;
+    margin: 15px;
+    font-size: 16px;
+}
+.right-row button{
+    font-size: 15px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    background-color: #66f6f1;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+border: 2px solid black;
+margin: 15px 0;
+}
+.left-row p a{
+    border-radius: 0;
+    background-color: black;
+    color: white;
+}
